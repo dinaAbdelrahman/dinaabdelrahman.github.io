@@ -100,6 +100,18 @@
       background: rgba(255,255,255,.82); border: 1px solid rgba(230,232,240,.9); border-radius: var(--radius);
       box-shadow: var(--shadow); padding: 28px; position: relative; overflow: hidden;
     }
+    .profile-photo {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 28px;
+  display: block;
+  margin: 6px auto 22px;
+  box-shadow: 0 22px 48px rgba(17, 24, 39, 0.16);
+  border: 4px solid #ffffff;
+}
     .hero-card:before {
       content:""; position: absolute; inset: 0 0 auto 0; height: 7px;
       background: linear-gradient(90deg, var(--primary), var(--accent));
@@ -232,6 +244,7 @@
           </div>
         </div>
         <aside class="hero-card" aria-label="Portfolio summary">
+          <img class="profile-photo" src="dina-profile-hero.jpg" alt="Dina Abdel Rahman professional portfolio photo">
           <img class="profile-photo" src="dina-profile-hero.jpg" alt="Dina Abdel Rahman professional portfolio photo">
           <p class="role-title">Enterprise AI and Data Architecture</p>
           <p class="role-copy">Applied AI, GenAI, LLM platforms, data engineering, cloud modernisation, analytics and architecture governance.</p>
