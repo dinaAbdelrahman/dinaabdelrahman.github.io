@@ -3,340 +3,390 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Dina Abdel Rahman, Lead Data, AI and Cloud Architect. Enterprise AI, GenAI, data platforms, cloud transformation and governance portfolio." />
   <title>Dina Abdel Rahman | Lead Data, AI & Cloud Architect</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio of Dina Abdel Rahman, Lead Data, AI and Cloud Architect specialising in enterprise AI, GenAI, data platforms, cloud architecture, governance and large-scale transformation." />
+  <style>
+    :root {
+      --bg: #f7f7fb;
+      --card: #ffffff;
+      --ink: #111827;
+      --muted: #5f6b85;
+      --line: #e6e8f0;
+      --primary: #5b21b6;
+      --primary-2: #7c3aed;
+      --accent: #0891b2;
+      --soft: #eef2ff;
+      --soft2: #ecfeff;
+      --shadow: 0 24px 70px rgba(17, 24, 39, 0.10);
+      --radius: 26px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 6%, rgba(124, 58, 237, 0.16), transparent 30%),
+        radial-gradient(circle at 90% 10%, rgba(8, 145, 178, 0.14), transparent 34%),
+        linear-gradient(180deg, #ffffff 0%, var(--bg) 42%, #ffffff 100%);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; }
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 22px; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(230, 232, 240, 0.8);
+    }
+    .nav {
+      min-height: 72px;
+      display: flex; align-items: center; justify-content: space-between; gap: 20px;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .brand-mark {
+      width: 42px; height: 42px; border-radius: 14px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white; display: grid; place-items: center; font-weight: 900; letter-spacing: .4px;
+      box-shadow: 0 14px 30px rgba(91, 33, 182, .25);
+    }
+    .brand-text strong { display: block; font-size: 15px; line-height: 1.15; }
+    .brand-text span { display: block; font-size: 12px; color: var(--muted); margin-top: 2px; }
+    .nav-links { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+    .nav-links a {
+      text-decoration: none; color: #29334a; font-size: 14px; font-weight: 700;
+      padding: 9px 12px; border-radius: 999px;
+    }
+    .nav-links a:hover { background: var(--soft); color: var(--primary); }
+
+    .hero { padding: 74px 0 34px; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 34px; align-items: center; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 9px;
+      background: rgba(91, 33, 182, .10); color: var(--primary);
+      border: 1px solid rgba(91, 33, 182, .15);
+      border-radius: 999px; padding: 8px 13px; font-size: 13px; font-weight: 900;
+      letter-spacing: .08em; text-transform: uppercase;
+    }
+    h1 {
+      margin: 20px 0 16px;
+      font-size: clamp(42px, 6vw, 76px);
+      line-height: .98;
+      letter-spacing: -0.065em;
+      max-width: 920px;
+    }
+    .lead {
+      margin: 0; color: var(--muted); font-size: clamp(18px, 2.1vw, 22px);
+      max-width: 760px;
+    }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+      border: 1px solid transparent; border-radius: 14px; padding: 13px 18px;
+      text-decoration: none; font-weight: 900; font-size: 15px;
+      transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { color: white; background: linear-gradient(135deg, var(--primary), var(--primary-2)); box-shadow: 0 18px 40px rgba(91,33,182,.25); }
+    .btn-secondary { color: var(--primary); background: white; border-color: #ddd6fe; box-shadow: 0 12px 28px rgba(17, 24, 39, .08); }
+    .btn-plain { color: #22304c; background: transparent; border-color: var(--line); }
+
+    .hero-card {
+      background: rgba(255,255,255,.82); border: 1px solid rgba(230,232,240,.9); border-radius: var(--radius);
+      box-shadow: var(--shadow); padding: 28px; position: relative; overflow: hidden;
+    }
+    .hero-card:before {
+      content:""; position: absolute; inset: 0 0 auto 0; height: 7px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+    }
+    .role-title { font-size: 24px; font-weight: 950; color: var(--primary); margin: 8px 0; letter-spacing: -.03em; }
+    .role-copy { color: var(--muted); margin: 0 0 20px; }
+    .stats { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; }
+    .stat { background: #fbfbff; border: 1px solid var(--line); border-radius: 18px; padding: 16px; }
+    .stat strong { display: block; font-size: 26px; line-height: 1; color: var(--ink); letter-spacing: -.04em; }
+    .stat span { display: block; margin-top: 7px; font-size: 13px; color: var(--muted); font-weight: 700; }
+    .pill-row { display:flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+    .pill { display:inline-flex; padding: 8px 11px; border-radius: 999px; background: var(--soft2); color: #155e75; font-weight: 800; font-size: 13px; }
+
+    section { padding: 62px 0; }
+    .section-head { display:flex; align-items:flex-end; justify-content:space-between; gap: 24px; margin-bottom: 24px; }
+    .kicker { color: var(--primary-2); font-size: 13px; font-weight: 950; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 8px; }
+    h2 { margin:0; font-size: clamp(30px, 4vw, 48px); line-height: 1.05; letter-spacing: -.05em; }
+    .section-lead { color: var(--muted); max-width: 720px; margin: 12px 0 0; font-size: 17px; }
+
+    .cards { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; }
+    .card {
+      background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: 24px;
+      box-shadow: 0 14px 36px rgba(17,24,39,.06);
+    }
+    .card h3 { margin: 0 0 9px; font-size: 21px; letter-spacing: -.025em; }
+    .card p { margin:0; color: var(--muted); }
+    .icon {
+      width: 46px; height: 46px; display:grid; place-items:center; border-radius: 16px;
+      background: linear-gradient(135deg, rgba(91,33,182,.12), rgba(8,145,178,.12));
+      color: var(--primary); font-weight: 950; margin-bottom: 16px;
+    }
+
+    .projects { display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 18px; }
+    .project-card { position: relative; overflow:hidden; }
+    .project-card:after { content:""; position:absolute; top:0; left:0; right:0; height:5px; background: linear-gradient(90deg, var(--primary), var(--accent)); }
+    .tag { display:inline-flex; padding: 7px 10px; border-radius:999px; background: var(--soft); color:var(--primary); font-size:12px; font-weight:900; margin-bottom: 12px; }
+    .project-card ul { margin: 13px 0 0; padding-left: 18px; color: var(--muted); }
+    .project-card li { margin: 8px 0; }
+
+    .timeline { display:grid; gap: 16px; }
+    .job { display:grid; grid-template-columns: 260px 1fr; gap: 20px; background:white; border:1px solid var(--line); border-radius:24px; padding:24px; box-shadow: 0 12px 30px rgba(17,24,39,.05); }
+    .job-time { color: var(--primary); font-weight: 950; }
+    .job h3 { margin:0 0 5px; font-size:22px; letter-spacing: -.02em; }
+    .job .company { color: var(--muted); font-weight: 800; margin-bottom: 9px; }
+    .job p { margin:0; color: var(--muted); }
+
+    .skill-groups { display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:18px; }
+    .skill-box { background:white; border:1px solid var(--line); border-radius:24px; padding:24px; box-shadow: 0 12px 30px rgba(17,24,39,.05); }
+    .skill-box h3 { margin:0 0 14px; }
+    .badges { display:flex; flex-wrap:wrap; gap:9px; }
+    .badge { padding:8px 11px; border-radius:999px; background:#f3f4f6; color:#263044; font-size:13px; font-weight:800; }
+
+    .credential-grid { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
+    .credential {
+      display:flex; flex-direction:column; justify-content:space-between; min-height:126px;
+      background:white; border:1px solid var(--line); border-radius:20px; padding:18px; text-decoration:none;
+      transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+    }
+    .credential:hover { transform: translateY(-3px); box-shadow: 0 18px 38px rgba(17,24,39,.10); border-color:#c4b5fd; }
+    .credential strong { font-size:15px; line-height:1.35; }
+    .credential span { color: var(--muted); font-size:13px; font-weight:800; margin-top: 12px; }
+
+    .contact-card {
+      background: linear-gradient(135deg, #111827, #2e1065 58%, #155e75);
+      color:white; border-radius: 30px; padding: 36px; display:grid; grid-template-columns: 1fr auto; gap: 24px; align-items:center;
+      box-shadow: 0 24px 70px rgba(17, 24, 39, 0.18);
+    }
+    .contact-card h2 { color:white; }
+    .contact-card p { color: rgba(255,255,255,.78); margin:12px 0 0; max-width: 720px; }
+    .contact-actions { display:flex; flex-wrap:wrap; gap:12px; justify-content:flex-end; }
+    .contact-actions .btn { background:white; color:#111827; }
+    .contact-actions .btn.alt { background:rgba(255,255,255,.12); color:white; border-color: rgba(255,255,255,.24); }
+
+    footer { padding: 28px 0 44px; color: var(--muted); font-size:14px; }
+    .footer-inner { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; border-top:1px solid var(--line); padding-top: 22px; }
+
+    @media (max-width: 920px) {
+      .hero { padding-top: 44px; }
+      .hero-grid, .cards, .projects, .skill-groups, .credential-grid { grid-template-columns: 1fr; }
+      .job { grid-template-columns: 1fr; }
+      .section-head { display:block; }
+      .contact-card { grid-template-columns: 1fr; }
+      .contact-actions { justify-content:flex-start; }
+      .nav { align-items:flex-start; flex-direction:column; padding: 14px 0; }
+      .nav-links { justify-content:flex-start; }
+      h1 { font-size: clamp(38px, 10vw, 56px); }
+    }
+
+    @media (max-width: 560px) {
+      .container { padding: 0 16px; }
+      .hero-card, .card, .job, .skill-box, .contact-card { border-radius: 20px; padding: 20px; }
+      .stats { grid-template-columns: 1fr; }
+      .nav-links a { padding: 8px 9px; font-size: 13px; }
+      .hero-actions .btn { width: 100%; }
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header" id="top">
-    <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#top" aria-label="Dina Abdel Rahman home">
-        <span class="brand-mark">DA</span>
-        <span>Dina Abdel Rahman</span>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="Dina Abdel Rahman portfolio home">
+        <div class="brand-mark">DA</div>
+        <div class="brand-text">
+          <strong>Dina Abdel Rahman</strong>
+          <span>Lead Data, AI & Cloud Architect</span>
+        </div>
       </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-      <div class="nav-links">
+      <nav class="nav-links" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#expertise">Expertise</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#credentials">Credentials</a>
         <a href="#contact">Contact</a>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main id="top">
     <section class="hero">
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">Lead Data, AI & Cloud Architect</span>
-          <h1>Designing secure enterprise AI, GenAI and data platforms for complex organisations.</h1>
-          <p class="hero-text">
-            I lead customer-facing solution design from discovery and assessment through architecture, MVP/POC delivery,
-            stakeholder alignment and production readiness. My work spans Claude and OpenAI-based platforms, cloud-native
-            architecture, enterprise data platforms, governance, analytics and large-scale transformation.
-          </p>
+        <div>
+          <div class="eyebrow">Lead Data, AI & Cloud Architect</div>
+          <h1>Designing secure enterprise AI, GenAI and data platforms.</h1>
+          <p class="lead">I lead customer-facing solution design from discovery and assessment through architecture, MVP/POC delivery, stakeholder alignment and production readiness.</p>
           <div class="hero-actions">
-            <a class="btn primary" href="Dina-Abdel-Rahman-Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
-            <a class="btn secondary" href="https://www.linkedin.com/in/dina-abdel-rahman-5565a622/" target="_blank" rel="noopener">LinkedIn Profile</a>
-            <a class="btn ghost" href="#projects">View Projects</a>
+            <a class="btn btn-primary" href="Dina-Abdel-Rahman-Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/dina-abdel-rahman-5565a622/" target="_blank" rel="noopener">LinkedIn Profile</a>
+            <a class="btn btn-plain" href="#projects">View Projects</a>
           </div>
         </div>
-        <aside class="hero-card" aria-label="Profile highlights">
-          <div class="profile-orb">AI</div>
-          <h2>Enterprise AI and Data Architecture</h2>
-          <p>Applied AI, GenAI, LLM platforms, data engineering, cloud modernisation and architecture governance.</p>
-          <div class="metric-grid">
-            <div><strong>19+</strong><span>Years experience</span></div>
-            <div><strong>60+</strong><span>Data sources integrated</span></div>
-            <div><strong>5</strong><span>Claude MVPs delivered</span></div>
-            <div><strong>4</strong><span>Major sectors served</span></div>
+        <aside class="hero-card" aria-label="Portfolio summary">
+          <p class="role-title">Enterprise AI and Data Architecture</p>
+          <p class="role-copy">Applied AI, GenAI, LLM platforms, data engineering, cloud modernisation, analytics and architecture governance.</p>
+          <div class="stats">
+            <div class="stat"><strong>19+</strong><span>Years experience</span></div>
+            <div class="stat"><strong>60+</strong><span>Data sources integrated</span></div>
+            <div class="stat"><strong>5</strong><span>Claude MVPs delivered</span></div>
+            <div class="stat"><strong>4</strong><span>Major sectors served</span></div>
+          </div>
+          <div class="pill-row">
+            <span class="pill">Banking</span>
+            <span class="pill">Energy & Utilities</span>
+            <span class="pill">Public Sector</span>
+            <span class="pill">Telecom</span>
           </div>
         </aside>
       </div>
     </section>
 
-    <section class="trust-strip">
-      <div class="container trust-grid">
-        <span>Public Sector</span>
-        <span>Banking</span>
-        <span>Energy & Utilities</span>
-        <span>Telecom</span>
-        <span>Cloud & AI Platforms</span>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container two-column">
-        <div>
-          <span class="section-kicker">About</span>
-          <h2>A senior architect who connects business problems with practical AI, data and cloud solutions.</h2>
-        </div>
-        <div class="rich-text">
-          <p>
-            Dina Abdel Rahman is a Lead Data, AI and Cloud Architect based in Ireland with 19+ years of experience delivering
-            complex data, analytics, AI and cloud solutions across regulated and enterprise environments.
-          </p>
-          <p>
-            She has strong experience in enterprise architecture, applied AI solution design, GenAI-enabled platforms,
-            Claude-based solutions, data governance, cloud-native systems and large-scale transformation. She works with
-            senior stakeholders, delivery teams and vendors to shape secure, scalable and production-ready solutions.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section tinted" id="expertise">
+    <section id="about">
       <div class="container">
-        <div class="section-heading">
-          <span class="section-kicker">Expertise</span>
-          <h2>Core architecture strengths</h2>
-          <p>Built around applied AI, enterprise data platforms, secure cloud design and delivery governance.</p>
+        <div class="section-head">
+          <div>
+            <div class="kicker">About</div>
+            <h2>Architecture leader for regulated and complex environments.</h2>
+            <p class="section-lead">Dina Abdel Rahman is based in Athlone, Ireland. She has 19+ years of experience delivering complex data, analytics, AI and cloud solutions across public sector, energy, utilities, telecom and banking.</p>
+          </div>
         </div>
-        <div class="cards six">
-          <article class="card">
-            <span class="icon">✦</span>
-            <h3>Applied AI, GenAI & LLM Architecture</h3>
-            <p>Claude, OpenAI, AI agents, Microsoft Agent Framework, LangChain, Azure AI services, prompt workflows, retrieval patterns, monitoring and governance.</p>
-          </article>
-          <article class="card">
-            <span class="icon">▣</span>
-            <h3>Enterprise Data Architecture</h3>
-            <p>Data models, analytical layers, warehouses, batch and streaming platforms, APIs, files, logs, databases and event-driven integration.</p>
-          </article>
-          <article class="card">
-            <span class="icon">☁</span>
-            <h3>Cloud-Native Solution Design</h3>
-            <p>Azure and AWS architecture covering secure infrastructure, storage, networking, model access, monitoring, observability and environment separation.</p>
-          </article>
-          <article class="card">
-            <span class="icon">◇</span>
-            <h3>Governance, Security & Quality</h3>
-            <p>Data access, auditability, output validation, regulatory readiness, data quality contracts, operational controls and safe AI adoption.</p>
-          </article>
-          <article class="card">
-            <span class="icon">⇄</span>
-            <h3>Migration & Transformation</h3>
-            <p>Modernising legacy and fragmented data landscapes into scalable cloud-native and hybrid architectures with phased delivery roadmaps.</p>
-          </article>
-          <article class="card">
-            <span class="icon">✓</span>
-            <h3>Architecture Leadership</h3>
-            <p>Architecture reviews, option assessments, decision forums, stakeholder workshops, Agile delivery support and executive-level reporting.</p>
-          </article>
+        <div class="cards">
+          <div class="card"><div class="icon">AI</div><h3>Applied AI and GenAI</h3><p>Designs Claude and OpenAI-based platforms, AI agents, orchestration, knowledge ingestion, action execution and controlled enterprise data access.</p></div>
+          <div class="card"><div class="icon">DA</div><h3>Enterprise Data Platforms</h3><p>Builds data models, warehouse structures, analytical layers, ingestion patterns and batch, streaming and historical data architectures.</p></div>
+          <div class="card"><div class="icon">CL</div><h3>Cloud and Governance</h3><p>Shapes secure cloud-native platforms with monitoring, observability, cost management, auditability, data governance and operational controls.</p></div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="projects">
+    <section id="expertise">
       <div class="container">
-        <div class="section-heading">
-          <span class="section-kicker">Featured work</span>
-          <h2>Projects that show enterprise impact</h2>
-          <p>Selected work from banking, energy, public sector and telecom environments.</p>
+        <div class="section-head">
+          <div>
+            <div class="kicker">Expertise</div>
+            <h2>What Dina brings to enterprise teams.</h2>
+            <p class="section-lead">A strong mix of AI architecture, data engineering, integration, governance, stakeholder leadership and practical delivery.</p>
+          </div>
         </div>
-        <div class="project-grid">
-          <article class="project featured">
-            <div class="tag">Banking | Azure | Claude | GenAI</div>
-            <h3>Claude-Based Enterprise AI Platform</h3>
-            <p>Designed a regulated banking AI platform deployed on Azure, covering Claude integration, AI agents, orchestration, knowledge ingestion, data integration and operational tooling.</p>
-            <ul>
-              <li>Designed agent runtime, action execution and multi-agent coordination.</li>
-              <li>Defined secure access to enterprise knowledge sources.</li>
-              <li>Embedded security, cost management, auditability and observability controls.</li>
-            </ul>
-          </article>
-          <article class="project">
-            <div class="tag">Energy | Claude MVPs | Applied AI</div>
-            <h3>Claude MVP Development</h3>
-            <p>Developed five Claude-based MVPs for energy sector use cases, supporting applied AI adoption across business and operational processes.</p>
-            <ul>
-              <li>Designed prompt workflows, enterprise data access and user interaction flows.</li>
-              <li>Validated business value, feasibility and delivery approach with stakeholders.</li>
-              <li>Considered privacy, reliability, auditability and operational controls.</li>
-            </ul>
-          </article>
-          <article class="project">
-            <div class="tag">Energy | ESG | CSRD</div>
-            <h3>Sustainability Data & Technology Assessment</h3>
-            <p>Led an assessment of ESG and CSRD reporting technology for a regulated energy organisation.</p>
-            <ul>
-              <li>Reviewed data quality, security, auditability and integration.</li>
-              <li>Mapped ESG data flows across systems, analytics, geospatial tools and spreadsheets.</li>
-              <li>Led buy-versus-build analysis and future-state principles.</li>
-            </ul>
-          </article>
-          <article class="project">
-            <div class="tag">Public Sector | Azure Document Intelligence</div>
-            <h3>Automated Invoice Processing Architecture</h3>
-            <p>Designed an Azure-based architecture for scanned invoice intake, classification, OCR extraction, validation and secure storage.</p>
-            <ul>
-              <li>Designed end-to-end intake and validation process.</li>
-              <li>Protected invoice data, scanned documents and generated artifacts.</li>
-              <li>Defined secure storage for extraction and validation results.</li>
-            </ul>
-          </article>
-          <article class="project">
-            <div class="tag">Public Sector | Core Data Platform</div>
-            <h3>Core Data Platform Assessment</h3>
-            <p>Performed an end-to-end assessment of core data systems, infrastructure, database models, storage, security logging, monitoring, backup, HA and DR.</p>
-            <ul>
-              <li>Reviewed data quality issues across critical data elements.</li>
-              <li>Defined archive requirements and target archive approach.</li>
-              <li>Recommended improvements for service continuity and resilience.</li>
-            </ul>
-          </article>
-          <article class="project">
-            <div class="tag">Telecom | Data Lake | Kafka | Cloudera</div>
-            <h3>Enterprise Data Lake Architecture</h3>
-            <p>Led DU’s enterprise data lake architecture and implementation to support large-scale ingestion, governance, analytics and AI use cases.</p>
-            <ul>
-              <li>Integrated 60+ sources across RAN, core, transmission, IP and applications.</li>
-              <li>Designed Kafka topics, schemas, retention, compression and security.</li>
-              <li>Designed Cloudera HDFS, Spark, Hive, Impala and Ranger policies.</li>
-            </ul>
-          </article>
+        <div class="cards">
+          <div class="card"><h3>GenAI and LLM Architecture</h3><p>Claude, OpenAI, Azure AI Foundry, Microsoft Agent Framework, LangChain, LangGraph, CrewAI, prompt workflows, retrieval patterns and output validation.</p></div>
+          <div class="card"><h3>Data Engineering and Modelling</h3><p>Enterprise data models, warehouse structures, analytical layers, schema design, normalisation, storage selection and integration architecture.</p></div>
+          <div class="card"><h3>Streaming and Integration</h3><p>Kafka, event-driven architecture, APIs, files, logs, databases, event streams, batch processing and near-real-time ingestion frameworks.</p></div>
+          <div class="card"><h3>Architecture Governance</h3><p>Architecture reviews, option assessments, decision forums, design assurance, enterprise principles and executive-level reporting.</p></div>
+          <div class="card"><h3>Transformation Roadmaps</h3><p>Target-state architecture, phased delivery roadmaps, legacy modernisation, migration planning, resilience and SLA-aligned design.</p></div>
+          <div class="card"><h3>Stakeholder Leadership</h3><p>Customer-facing AI workshops, technical discussions, use case shaping, MVP/POC planning, vendor coordination and business development support.</p></div>
         </div>
       </div>
     </section>
 
-    <section class="section tinted" id="experience">
+    <section id="projects">
       <div class="container">
-        <div class="section-heading">
-          <span class="section-kicker">Experience</span>
-          <h2>Career timeline</h2>
+        <div class="section-head">
+          <div>
+            <div class="kicker">Featured Projects</div>
+            <h2>Selected architecture work.</h2>
+            <p class="section-lead">These project examples show practical enterprise delivery across banking, energy, public sector and telecom.</p>
+          </div>
         </div>
+        <div class="projects">
+          <div class="card project-card"><span class="tag">Banking | Azure | Claude</span><h3>Claude-Based Enterprise AI Platform</h3><p>Delivered architecture design for a Claude-based enterprise AI platform deployed on Azure for a regulated banking client.</p><ul><li>Defined platform architecture for Claude integration, AI agents, orchestration, data integration and governance.</li><li>Designed agent runtime, action execution, multi-agent coordination and secure enterprise knowledge access.</li><li>Embedded security, cost management, auditability and operational controls.</li></ul></div>
+          <div class="card project-card"><span class="tag">Energy | Claude MVPs</span><h3>Claude MVP Development</h3><p>Developed five Claude-based MVPs for energy sector use cases supporting applied AI adoption.</p><ul><li>Designed prompt workflows, enterprise data access, user interaction flows and output validation.</li><li>Translated business problems into reusable GenAI solution patterns.</li><li>Considered privacy, reliability, auditability and operational controls.</li></ul></div>
+          <div class="card project-card"><span class="tag">Energy | ESG | CSRD</span><h3>Sustainability Data and Technology Assessment</h3><p>Led assessment of the data, technology and governance landscape for ESG and CSRD reporting.</p><ul><li>Reviewed performance, data quality, security, auditability and integration.</li><li>Analysed ESG data flows across enterprise systems, analytics platforms and spreadsheets.</li><li>Led buy-versus-build assessment and future-state architecture principles.</li></ul></div>
+          <div class="card project-card"><span class="tag">Public Sector | Azure</span><h3>Automated Invoice Processing Architecture</h3><p>Designed Azure-based cloud architecture for automated invoice intake, validation and OCR-based extraction.</p><ul><li>Used Azure Document Intelligence for invoice classification and data extraction.</li><li>Designed secure storage for invoice data, processing artifacts and validation results.</li><li>Defined security controls for scanned documents and generated outputs.</li></ul></div>
+          <div class="card project-card"><span class="tag">Public Sector | Data Platform</span><h3>Core Data Platform Assessment</h3><p>Performed an end-to-end assessment of a core data system and supporting infrastructure.</p><ul><li>Reviewed models, table structures, constraints, storage and bulk load processing.</li><li>Assessed data quality issues and defined data quality contract guidelines.</li><li>Reviewed backup, high availability, disaster recovery and security logging.</li></ul></div>
+          <div class="card project-card"><span class="tag">Telecom | Data Lake</span><h3>Enterprise Data Lake at DU</h3><p>Led architecture and implementation of an enterprise data lake for large-scale ingestion, governance, analytics and AI use cases.</p><ul><li>Integrated 60+ sources across RAN, core, transmission, IP, applications and probes.</li><li>Designed Kafka topics, schemas, retention, compression and security controls.</li><li>Designed Cloudera components including HDFS, Spark, Hive, Impala and Ranger policies.</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="section-head"><div><div class="kicker">Experience</div><h2>Career timeline.</h2></div></div>
         <div class="timeline">
-          <article class="timeline-item">
-            <span class="date">May 2025 – Present</span>
-            <h3>Data & AI Solution Architect, Associate Director | KPMG | Ireland</h3>
-            <p>Delivering Data, AI and cloud solution architecture across public sector, utilities, energy and banking. Leading solution design, customer-facing AI workshops, target-state architecture, delivery planning and architecture assurance.</p>
-          </article>
-          <article class="timeline-item">
-            <span class="date">Nov 2022 – May 2025</span>
-            <h3>Senior Solution Architect | Ericsson | Ireland</h3>
-            <p>Led architecture design for a next-generation 5G network automation platform. Designed cloud-native components, microservices, data flows, message schemas, API structures and platform dependencies.</p>
-          </article>
-          <article class="timeline-item">
-            <span class="date">May 2019 – Nov 2022</span>
-            <h3>AI, Data Solution Architect | DU | UAE</h3>
-            <p>Led enterprise data lake architecture, data source integration, Kafka and Cloudera design, AI use case assessment, vendor engagement and POC planning.</p>
-          </article>
-          <article class="timeline-item">
-            <span class="date">Aug 2014 – May 2019</span>
-            <h3>Data Analytics and Engineering Lead | DU | UAE</h3>
-            <p>Led network analytics, performance reporting, SQL and ETL workflows, real-time dashboards, forecasting and capacity planning. Coordinated 15+ stakeholders and 40+ team members during a multi-year network upgrade programme.</p>
-          </article>
-          <article class="timeline-item">
-            <span class="date">Nov 2007 – Jul 2014</span>
-            <h3>Migration Consultant | Huawei | Various Locations</h3>
-            <p>Delivered reporting, dashboards, performance monitoring and data analysis solutions across telecom network transformation programmes.</p>
-          </article>
+          <div class="job"><div class="job-time">May 2025 – Present</div><div><h3>Data & AI Solution Architect, Associate Director</h3><div class="company">KPMG | Ireland</div><p>Delivers Data, AI and cloud solution architecture services across public sector, utilities, energy and banking. Leads solution design across data architecture, cloud modernisation, governance, security and AI-enabled platforms.</p></div></div>
+          <div class="job"><div class="job-time">Nov 2022 – May 2025</div><div><h3>Senior Solution Architect</h3><div class="company">Ericsson | Ireland</div><p>Led architecture design for a next-generation 5G network automation platform, including cloud-native components, microservices, data flows, APIs, message schemas and platform dependencies.</p></div></div>
+          <div class="job"><div class="job-time">May 2019 – Nov 2022</div><div><h3>AI, Data Solution Architect</h3><div class="company">DU | UAE</div><p>Led enterprise data lake architecture, 60+ source integration, Kafka and Cloudera design, AI use case assessment, platform evaluation, POCs, vendor engagement and delivery planning.</p></div></div>
+          <div class="job"><div class="job-time">Aug 2014 – May 2019</div><div><h3>Data Analytics and Engineering Lead</h3><div class="company">DU | UAE</div><p>Led analytics and engineering across network operations, performance dashboards, traffic forecasting, capacity planning and a multi-year network upgrade programme with 15+ stakeholders and 40+ team members.</p></div></div>
+          <div class="job"><div class="job-time">Nov 2007 – Jul 2014</div><div><h3>Migration Consultant</h3><div class="company">Huawei | Various Locations</div><p>Delivered reporting, dashboarding, performance monitoring and data analysis solutions across telecom network transformation programmes.</p></div></div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="skills">
+    <section id="skills">
       <div class="container">
-        <div class="section-heading">
-          <span class="section-kicker">Tools and platforms</span>
-          <h2>Technology depth</h2>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-box">
-            <h3>AI, GenAI & Agentic Platforms</h3>
-            <div class="badges"><span>Claude</span><span>OpenAI</span><span>Azure AI Foundry</span><span>Azure ML Studio</span><span>Microsoft Agent Framework</span><span>LangChain</span><span>LangGraph</span><span>CrewAI</span><span>SageMaker</span></div>
-          </div>
-          <div class="skill-box">
-            <h3>Programming & API Development</h3>
-            <div class="badges"><span>Python</span><span>FastAPI</span><span>Flask</span><span>scikit-learn</span><span>PyTorch</span></div>
-          </div>
-          <div class="skill-box">
-            <h3>Data Platforms</h3>
-            <div class="badges"><span>Oracle</span><span>MySQL</span><span>PostgreSQL</span><span>Cassandra</span><span>Neo4j</span><span>Redis</span><span>Elasticsearch</span><span>Teradata</span><span>Cloudera</span><span>Apache Spark</span><span>Kafka</span><span>Airflow</span><span>Microsoft Fabric</span><span>AWS Glue</span><span>AWS Athena</span><span>Alteryx</span></div>
-          </div>
-          <div class="skill-box">
-            <h3>Analytics, DevOps & Cloud Native</h3>
-            <div class="badges"><span>Power BI</span><span>MicroStrategy</span><span>Tableau</span><span>Git</span><span>Jenkins</span><span>GitLab</span><span>Azure DevOps</span><span>Terraform</span><span>Docker</span><span>Kubernetes</span><span>OpenShift</span></div>
-          </div>
+        <div class="section-head"><div><div class="kicker">Skills</div><h2>Tools and platforms.</h2></div></div>
+        <div class="skill-groups">
+          <div class="skill-box"><h3>AI, GenAI and Agentic Platforms</h3><div class="badges"><span class="badge">Claude</span><span class="badge">OpenAI</span><span class="badge">Azure AI Foundry</span><span class="badge">Azure ML Studio</span><span class="badge">Microsoft Agent Framework</span><span class="badge">LangChain</span><span class="badge">LangGraph</span><span class="badge">CrewAI</span><span class="badge">SageMaker</span></div></div>
+          <div class="skill-box"><h3>Programming and API Development</h3><div class="badges"><span class="badge">Python</span><span class="badge">FastAPI</span><span class="badge">Flask</span><span class="badge">scikit-learn</span><span class="badge">PyTorch</span></div></div>
+          <div class="skill-box"><h3>Data Platforms</h3><div class="badges"><span class="badge">Oracle</span><span class="badge">MySQL</span><span class="badge">PostgreSQL</span><span class="badge">Cassandra</span><span class="badge">Neo4j</span><span class="badge">Redis</span><span class="badge">Elasticsearch</span><span class="badge">Teradata</span><span class="badge">Cloudera</span><span class="badge">Apache Spark</span><span class="badge">Kafka</span><span class="badge">Airflow</span><span class="badge">Microsoft Fabric</span><span class="badge">AWS Glue</span><span class="badge">AWS Athena</span><span class="badge">Alteryx</span></div></div>
+          <div class="skill-box"><h3>Analytics, DevOps and Cloud Native</h3><div class="badges"><span class="badge">Power BI</span><span class="badge">MicroStrategy</span><span class="badge">Tableau</span><span class="badge">Git</span><span class="badge">Jenkins</span><span class="badge">GitLab</span><span class="badge">Azure DevOps</span><span class="badge">Terraform</span><span class="badge">Docker</span><span class="badge">Kubernetes</span><span class="badge">OpenShift</span></div></div>
         </div>
       </div>
     </section>
 
-    <section class="section tinted" id="credentials">
+    <section id="credentials">
       <div class="container">
-        <div class="section-heading">
-          <span class="section-kicker">Credentials</span>
-          <h2>Certifications and nanodegrees</h2>
-          <p>Clickable credentials for recruiter and hiring manager verification.</p>
-        </div>
+        <div class="section-head"><div><div class="kicker">Credentials</div><h2>Certifications and learning.</h2><p class="section-lead">Clickable credentials from Microsoft, AWS, Credly and Udacity.</p></div></div>
         <div class="credential-grid">
-          <a class="credential" href="https://learn.microsoft.com/en-gb/users/dinaabdelrahman-6051/credentials/2e6b83c832cbd402?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener"><span>Microsoft</span><strong>Azure AI Engineer Associate</strong></a>
-          <a class="credential" href="https://www.credly.com/badges/aed33bbf-f69d-4b84-83ac-20fa1b3f4a49?source=linked_in_profile" target="_blank" rel="noopener"><span>Microsoft</span><strong>Azure Data Fundamentals</strong></a>
-          <a class="credential" href="https://www.credly.com/badges/06112216-f1b9-4933-8673-847c0864eb64?source=linked_in_profile" target="_blank" rel="noopener"><span>Microsoft</span><strong>Azure AI Fundamentals</strong></a>
-          <a class="credential" href="https://www.credly.com/badges/a2751bd1-4f92-4ce0-b389-b7ff7cc35877?source=linked_in_profile" target="_blank" rel="noopener"><span>Microsoft</span><strong>Azure Fundamentals</strong></a>
-          <a class="credential" href="https://www.credly.com/badges/9d9560cb-4deb-403a-bb41-56974ff110cb?source=linked_in_profile" target="_blank" rel="noopener"><span>AWS</span><strong>Machine Learning – Specialty</strong></a>
-          <a class="credential" href="https://www.credly.com/badges/ab1732e3-61a7-438e-b31e-29681bf59282?source=linked_in_profile" target="_blank" rel="noopener"><span>AWS</span><strong>Solutions Architect Associate</strong></a>
-          <a class="credential" href="https://www.credly.com/badges/bcb52b4d-35a6-45b2-9673-def3940d2458?source=linked_in_profile" target="_blank" rel="noopener"><span>AWS Partner</span><strong>Accreditation Business</strong></a>
-          <a class="credential" href="https://www.credly.com/badges/06bf684f-4940-49fb-9107-c0db8f9d0300?source=linked_in_profile" target="_blank" rel="noopener"><span>AWS Partner</span><strong>Accreditation Technical</strong></a>
-          <a class="credential" href="https://www.credly.com/badges/8e9b2e5c-6d5b-4016-9ee2-bbe064cbe60e?source=linked_in_profile" target="_blank" rel="noopener"><span>AWS Partner</span><strong>Cloud Economics Accreditation</strong></a>
-          <a class="credential" href="https://www.udacity.com/certificate/QP49H3CC" target="_blank" rel="noopener"><span>Udacity</span><strong>Data Engineering Nanodegree</strong></a>
-          <a class="credential" href="https://www.udacity.com/certificate/FACEDFQ3" target="_blank" rel="noopener"><span>Udacity</span><strong>Deep Learning Nanodegree</strong></a>
-          <a class="credential" href="https://www.udacity.com/certificate/HV2E6HEJ" target="_blank" rel="noopener"><span>Udacity</span><strong>Data Analyst Nanodegree</strong></a>
-          <a class="credential" href="https://www.udacity.com/certificate/5D4SPDDJ" target="_blank" rel="noopener"><span>Udacity</span><strong>Business Analyst Nanodegree</strong></a>
-          <a class="credential" href="https://www.credly.com/badges/cf81e66e-0b5a-459b-9a43-2ad87be883a4/linked_in_profile" target="_blank" rel="noopener"><span>Applied Data Science Camp</span><strong>Graduate 2023</strong></a>
+          <a class="credential" href="https://learn.microsoft.com/en-gb/users/dinaabdelrahman-6051/credentials/2e6b83c832cbd402?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener"><strong>Microsoft Certified: Azure AI Engineer Associate</strong><span>Microsoft</span></a>
+          <a class="credential" href="https://www.udacity.com/certificate/QP49H3CC" target="_blank" rel="noopener"><strong>Data Engineering Nanodegree</strong><span>Udacity</span></a>
+          <a class="credential" href="https://www.credly.com/badges/cf81e66e-0b5a-459b-9a43-2ad87be883a4/linked_in_profile" target="_blank" rel="noopener"><strong>Applied Data Science Camp - Graduate 2023</strong><span>Credly</span></a>
+          <a class="credential" href="https://www.credly.com/badges/aed33bbf-f69d-4b84-83ac-20fa1b3f4a49?source=linked_in_profile" target="_blank" rel="noopener"><strong>Microsoft Certified: Azure Data Fundamentals</strong><span>Microsoft</span></a>
+          <a class="credential" href="https://www.credly.com/badges/06112216-f1b9-4933-8673-847c0864eb64?source=linked_in_profile" target="_blank" rel="noopener"><strong>Microsoft Certified: Azure AI Fundamentals</strong><span>Microsoft</span></a>
+          <a class="credential" href="https://www.credly.com/badges/a2751bd1-4f92-4ce0-b389-b7ff7cc35877?source=linked_in_profile" target="_blank" rel="noopener"><strong>Microsoft Certified: Azure Fundamentals</strong><span>Microsoft</span></a>
+          <a class="credential" href="https://www.credly.com/badges/9d9560cb-4deb-403a-bb41-56974ff110cb?source=linked_in_profile" target="_blank" rel="noopener"><strong>AWS Certified Machine Learning – Specialty</strong><span>AWS</span></a>
+          <a class="credential" href="https://www.credly.com/badges/ab1732e3-61a7-438e-b31e-29681bf59282?source=linked_in_profile" target="_blank" rel="noopener"><strong>AWS Certified Solutions Architect – Associate</strong><span>AWS</span></a>
+          <a class="credential" href="https://www.credly.com/badges/bcb52b4d-35a6-45b2-9673-def3940d2458?source=linked_in_profile" target="_blank" rel="noopener"><strong>AWS Partner: Accreditation (Business)</strong><span>AWS</span></a>
+          <a class="credential" href="https://www.credly.com/badges/06bf684f-4940-49fb-9107-c0db8f9d0300?source=linked_in_profile" target="_blank" rel="noopener"><strong>AWS Partner: Accreditation (Technical)</strong><span>AWS</span></a>
+          <a class="credential" href="https://www.credly.com/badges/8e9b2e5c-6d5b-4016-9ee2-bbe064cbe60e?source=linked_in_profile" target="_blank" rel="noopener"><strong>AWS Partner: Cloud Economics Accreditation</strong><span>AWS</span></a>
+          <a class="credential" href="https://www.udacity.com/certificate/FACEDFQ3" target="_blank" rel="noopener"><strong>Deep Learning Nanodegree</strong><span>Udacity</span></a>
+          <a class="credential" href="https://www.udacity.com/certificate/HV2E6HEJ" target="_blank" rel="noopener"><strong>Data Analyst Nanodegree</strong><span>Udacity</span></a>
+          <a class="credential" href="https://www.udacity.com/certificate/5D4SPDDJ" target="_blank" rel="noopener"><strong>Business Analyst Nanodegree</strong><span>Udacity</span></a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="training">
-      <div class="container two-column">
-        <div>
-          <span class="section-kicker">Training</span>
-          <h2>Professional training</h2>
-        </div>
-        <div class="training-list">
-          <span>Kubernetes and Helm Administration</span>
-          <span>Developing Cloud Native Applications</span>
-          <span>Microsoft Azure DevOps Engineer</span>
-          <span>Microsoft Azure AI Engineer</span>
-          <span>Microsoft Azure Machine Learning Engineer</span>
-          <span>Microsoft Azure Solution Architect Professional</span>
-          <span>Microsoft Azure Data Engineering</span>
-          <span>Developing on AWS Professional Training</span>
-          <span>DevOps Engineering on AWS Professional Training</span>
-          <span>AWS Machine Learning Engineer Professional Training</span>
-          <span>Intel Edge AI for IoT Developers</span>
-        </div>
+    <section id="training">
+      <div class="container">
+        <div class="section-head"><div><div class="kicker">Professional Training</div><h2>Cloud, AI, DevOps and platform training.</h2></div></div>
+        <div class="badges"><span class="badge">Kubernetes and Helm Administration</span><span class="badge">Developing Cloud Native Applications</span><span class="badge">Microsoft Azure DevOps Engineer</span><span class="badge">Microsoft Azure AI Engineer</span><span class="badge">Microsoft Azure Machine Learning Engineer</span><span class="badge">Microsoft Azure Solution Architect Professional</span><span class="badge">Microsoft Azure Data Engineering</span><span class="badge">Developing on AWS</span><span class="badge">DevOps Engineering on AWS</span><span class="badge">AWS Machine Learning Engineer</span><span class="badge">Intel Edge AI for IoT Developers</span></div>
       </div>
     </section>
 
-    <section class="cta" id="contact">
-      <div class="container cta-card">
-        <div>
-          <span class="section-kicker">Contact</span>
-          <h2>Available for senior Data, AI and Cloud Architecture opportunities.</h2>
-          <p>Athlone, Westmeath, Ireland. Open to discussions across enterprise AI, GenAI, cloud transformation, data platforms and architecture leadership.</p>
-        </div>
-        <div class="cta-actions">
-          <a class="btn primary" href="mailto:Dina.mowafie@gmail.com">Email Dina</a>
-          <a class="btn secondary" href="https://www.linkedin.com/in/dina-abdel-rahman-5565a622/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+    <section id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div>
+            <div class="kicker" style="color:#c4b5fd">Contact</div>
+            <h2>Let’s connect.</h2>
+            <p>Available for senior Data, AI and Cloud Architecture conversations across enterprise AI, GenAI platforms, data transformation and cloud modernisation.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn" href="mailto:Dina.mowafie@gmail.com">Email Dina</a>
+            <a class="btn alt" href="https://www.linkedin.com/in/dina-abdel-rahman-5565a622/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <p>© <span id="year"></span> Dina Abdel Rahman. All rights reserved.</p>
-      <a href="#top">Back to top ↑</a>
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Dina Abdel Rahman. All rights reserved.</span>
+      <span>Athlone, Westmeath, Ireland</span>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
