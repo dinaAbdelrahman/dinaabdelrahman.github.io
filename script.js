@@ -1,22 +1,21 @@
-// Dina Abdel Rahman Portfolio
-// Simple mobile navigation and dynamic year
+const toggle = document.querySelector('.nav-toggle');
+const links = document.querySelector('.nav-links');
 
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
+if (toggle && links) {
+  toggle.addEventListener('click', () => {
+    const isOpen = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
 
-if (menuToggle && navLinks) {
-  menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
+  links.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
   });
 }
 
-document.querySelectorAll(".nav-links a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("show");
-  });
-});
-
-const yearElement = document.getElementById("year");
-if (yearElement) {
-  yearElement.textContent = new Date().getFullYear();
+const year = document.getElementById('year');
+if (year) {
+  year.textContent = new Date().getFullYear();
 }

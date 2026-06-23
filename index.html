@@ -3,403 +3,338 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Dina Abdel Rahman - Lead Data, AI and Cloud Architect portfolio. Enterprise architecture, AI platforms, GenAI, cloud transformation, data governance and analytics." />
+  <meta name="description" content="Dina Abdel Rahman, Lead Data, AI and Cloud Architect. Enterprise AI, GenAI, data platforms, cloud transformation and governance portfolio." />
   <title>Dina Abdel Rahman | Lead Data, AI & Cloud Architect</title>
-
-  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Main CSS file -->
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <!-- Top navigation -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="#home" class="logo">Dina Abdel Rahman</a>
-
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
-        ☰
-      </button>
-
-      <div class="nav-links" id="navLinks">
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Dina Abdel Rahman home">
+        <span class="brand-mark">DA</span>
+        <span>Dina Abdel Rahman</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="nav-links">
         <a href="#about">About</a>
         <a href="#expertise">Expertise</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact" class="nav-button">Contact</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#contact">Contact</a>
       </div>
-    </div>
-  </nav>
-
-  <!-- Hero section -->
-  <header class="hero" id="home">
-    <div class="hero-bg"></div>
-
-    <div class="hero-container">
-      <div class="hero-content">
-        <p class="eyebrow">Data • AI • Cloud • Enterprise Architecture</p>
-        <h1>Dina Abdel Rahman</h1>
-        <h2>Lead Data, AI & Cloud Architect</h2>
-
-        <p class="hero-text">
-          I design and deliver enterprise data, AI and cloud solutions across complex and regulated environments.
-          My work covers enterprise architecture, applied AI, GenAI platforms, cloud-native design, governance,
-          analytics and large-scale transformation.
-        </p>
-
-        <div class="hero-actions">
-          <a href="Dina-Abdel-Rahman-Resume.pdf" class="primary-button" target="_blank">Download Resume</a>
-          <a href="#projects" class="secondary-button">View Projects</a>
-          <a href="mailto:Dina.mowafie@gmail.com" class="secondary-button">Email Dina</a>
-          <a href="https://www.linkedin.com/in/dina-abdel-rahman-5565a622/" class="secondary-button" target="_blank" rel="noopener">LinkedIn Profile</a>
-        </div>
-      </div>
-
-      <div class="hero-card">
-        <div class="profile-circle">DA</div>
-        <h3>Architecture Focus</h3>
-        <p>Enterprise AI platforms, data transformation, cloud-native systems, governance and analytics.</p>
-
-        <div class="mini-list">
-          <span>Azure</span>
-          <span>AWS</span>
-          <span>Microsoft Fabric</span>
-          <span>GenAI</span>
-          <span>Kafka</span>
-          <span>Data Governance</span>
-        </div>
-      </div>
-    </div>
+    </nav>
   </header>
 
-  <!-- Quick stats -->
-  <section class="stats-section">
-    <div class="stats-grid">
-      <div class="stat-card">
-        <span class="stat-number">19+</span>
-        <span class="stat-label">Years Experience</span>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Lead Data, AI & Cloud Architect</span>
+          <h1>Designing secure enterprise AI, GenAI and data platforms for complex organisations.</h1>
+          <p class="hero-text">
+            I lead customer-facing solution design from discovery and assessment through architecture, MVP/POC delivery,
+            stakeholder alignment and production readiness. My work spans Claude and OpenAI-based platforms, cloud-native
+            architecture, enterprise data platforms, governance, analytics and large-scale transformation.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="Dina-Abdel-Rahman-Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+            <a class="btn secondary" href="https://www.linkedin.com/in/dina-abdel-rahman-5565a622/" target="_blank" rel="noopener">LinkedIn Profile</a>
+            <a class="btn ghost" href="#projects">View Projects</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Profile highlights">
+          <div class="profile-orb">AI</div>
+          <h2>Enterprise AI and Data Architecture</h2>
+          <p>Applied AI, GenAI, LLM platforms, data engineering, cloud modernisation and architecture governance.</p>
+          <div class="metric-grid">
+            <div><strong>19+</strong><span>Years experience</span></div>
+            <div><strong>60+</strong><span>Data sources integrated</span></div>
+            <div><strong>5</strong><span>Claude MVPs delivered</span></div>
+            <div><strong>4</strong><span>Major sectors served</span></div>
+          </div>
+        </aside>
       </div>
-      <div class="stat-card">
-        <span class="stat-number">60+</span>
-        <span class="stat-label">Data Sources Integrated</span>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <span>Public Sector</span>
+        <span>Banking</span>
+        <span>Energy & Utilities</span>
+        <span>Telecom</span>
+        <span>Cloud & AI Platforms</span>
       </div>
-      <div class="stat-card">
-        <span class="stat-number">5</span>
-        <span class="stat-label">Major Industries</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-number">AI</span>
-        <span class="stat-label">Enterprise Platform Design</span>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About -->
-  <section class="section" id="about">
-    <div class="section-heading">
-      <p class="section-kicker">About</p>
-      <h2>Architecting practical, scalable and governed technology solutions.</h2>
-    </div>
-
-    <div class="about-grid">
-      <div>
-        <p>
-          Dina Abdel Rahman is a Lead Data, AI and Cloud Architect based in Ireland with 19+ years of experience
-          delivering complex data, analytics, AI and cloud solutions across public sector, energy, utilities,
-          telecom and banking.
-        </p>
-        <p>
-          She has strong experience in enterprise architecture, data platforms, cloud-native design,
-          AI-enabled solutions, governance, security and large-scale transformation. She works across assessment,
-          target-state architecture, solution options, stakeholder alignment, delivery planning and architecture assurance.
-        </p>
-      </div>
-
-      <div class="highlight-box">
-        <h3>What Dina brings</h3>
-        <ul>
-          <li>Architecture leadership from discovery to delivery.</li>
-          <li>Strong stakeholder communication across business, IT, security and vendors.</li>
-          <li>Practical AI and data platform thinking, not only theoretical design.</li>
-          <li>Strong delivery background across regulated and enterprise environments.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Expertise -->
-  <section class="section soft-section" id="expertise">
-    <div class="section-heading center">
-      <p class="section-kicker">Expertise</p>
-      <h2>Core areas where Dina creates business and technical value.</h2>
-    </div>
-
-    <div class="cards-grid">
-      <article class="info-card">
-        <div class="icon">01</div>
-        <h3>Enterprise Data Architecture</h3>
-        <p>Scalable data platforms, ingestion frameworks, ETL/ELT pipelines, batch and streaming architecture, data quality controls and target-state roadmaps.</p>
-      </article>
-
-      <article class="info-card">
-        <div class="icon">02</div>
-        <h3>Applied AI & GenAI</h3>
-        <p>AI-enabled platforms, AI agents, knowledge ingestion, action execution, model hosting, orchestration, monitoring and governance.</p>
-      </article>
-
-      <article class="info-card">
-        <div class="icon">03</div>
-        <h3>Cloud Architecture</h3>
-        <p>Secure Azure and AWS architecture covering networking, storage, compute, monitoring, environment separation, resilience and cost controls.</p>
-      </article>
-
-      <article class="info-card">
-        <div class="icon">04</div>
-        <h3>Governance & Data Quality</h3>
-        <p>Data governance, quality frameworks, auditability, regulatory reporting readiness, data contracts and operational controls.</p>
-      </article>
-
-      <article class="info-card">
-        <div class="icon">05</div>
-        <h3>Migration & Transformation</h3>
-        <p>Modernising fragmented legacy data landscapes into scalable cloud-native and hybrid architectures with phased delivery roadmaps.</p>
-      </article>
-
-      <article class="info-card">
-        <div class="icon">06</div>
-        <h3>Architecture Leadership</h3>
-        <p>Architecture reviews, option assessments, vendor discussions, solution assurance, decision forums and executive-level reporting.</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section class="section" id="projects">
-    <div class="section-heading center">
-      <p class="section-kicker">Featured Projects</p>
-      <h2>Selected work from enterprise AI, cloud, data and transformation engagements.</h2>
-    </div>
-
-    <div class="project-list">
-      <article class="project-card">
-        <div class="project-tag">Banking • Azure • GenAI</div>
-        <h3>Enterprise AI Platform</h3>
-        <p>
-          Delivered architecture design for an enterprise AI platform on Azure, covering AI agents,
-          orchestration, data integration, governance and operational tooling.
-        </p>
-        <ul>
-          <li>Designed agent runtime, knowledge ingestion, action execution and multi-agent coordination.</li>
-          <li>Designed secure cloud infrastructure for networking, storage, model hosting and monitoring.</li>
-          <li>Embedded security, cost management and observability controls.</li>
-        </ul>
-      </article>
-
-      <article class="project-card">
-        <div class="project-tag">Energy • ESG • CSRD</div>
-        <h3>Sustainability Data & Technology Assessment</h3>
-        <p>
-          Led an end-to-end assessment of data, technology and governance capabilities supporting ESG and CSRD reporting.
-        </p>
-        <ul>
-          <li>Reviewed performance, data quality, security, auditability and integration.</li>
-          <li>Analysed ESG data flows across enterprise systems, analytics platforms, geospatial tools and spreadsheets.</li>
-          <li>Defined future-state architecture principles, controls and ESG lifecycle requirements.</li>
-        </ul>
-      </article>
-
-      <article class="project-card">
-        <div class="project-tag">Public Sector • Azure AI</div>
-        <h3>Automated Invoice Processing Architecture</h3>
-        <p>
-          Designed an Azure-based architecture for automated invoice processing using scanned invoice images and OCR-based extraction.
-        </p>
-        <ul>
-          <li>Used Azure Document Intelligence for invoice classification and extraction.</li>
-          <li>Designed secure storage for invoice data, artifacts and validation results.</li>
-          <li>Defined controls to protect sensitive invoice documents and generated outputs.</li>
-        </ul>
-      </article>
-
-      <article class="project-card">
-        <div class="project-tag">Public Sector • Data Platform</div>
-        <h3>Core Data Platform Assessment</h3>
-        <p>
-          Performed an end-to-end assessment of a core data system and supporting infrastructure.
-        </p>
-        <ul>
-          <li>Reviewed database models, constraints, storage design and bulk load processing.</li>
-          <li>Identified archive requirements and target archive solution.</li>
-          <li>Reviewed security logging, monitoring, backup, high availability and disaster recovery.</li>
-        </ul>
-      </article>
-
-      <article class="project-card">
-        <div class="project-tag">Telecom • Data Lake • Kafka</div>
-        <h3>Enterprise Data Lake</h3>
-        <p>
-          Led architecture and implementation of an enterprise data lake supporting large-scale ingestion, governance, analytics and AI use cases.
-        </p>
-        <ul>
-          <li>Integrated 60+ data sources across RAN, core, transmission, IP, applications and infrastructure.</li>
-          <li>Designed Kafka topics, schemas, retention, compression and security controls.</li>
-          <li>Designed Cloudera components including HDFS, Spark, Hive, Impala and Ranger policies.</li>
-        </ul>
-      </article>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section class="section soft-section" id="experience">
-    <div class="section-heading center">
-      <p class="section-kicker">Experience</p>
-      <h2>A career across data, AI, cloud, telecom and enterprise transformation.</h2>
-    </div>
-
-    <div class="timeline">
-      <div class="timeline-item">
-        <span class="timeline-date">May 2025 – Present</span>
-        <h3>Data & AI Solution Architect | KPMG | Ireland</h3>
-        <p>Delivering Data, AI and cloud solution architecture across public sector, utilities, energy and banking engagements.</p>
-      </div>
-
-      <div class="timeline-item">
-        <span class="timeline-date">Nov 2022 – May 2025</span>
-        <h3>Senior Solution Architect | Ericsson | Ireland</h3>
-        <p>Led architecture design for a next-generation 5G network automation platform, covering microservices, data flows, APIs and platform dependencies.</p>
-      </div>
-
-      <div class="timeline-item">
-        <span class="timeline-date">May 2019 – Nov 2022</span>
-        <h3>AI, Data Solution Architect | DU | UAE</h3>
-        <p>Led DU’s enterprise data lake architecture, AI assessments, platform evaluation, Kafka and Cloudera design, and POC delivery.</p>
-      </div>
-
-      <div class="timeline-item">
-        <span class="timeline-date">Aug 2014 – May 2019</span>
-        <h3>Data Analytics and Engineering Lead | DU | UAE</h3>
-        <p>Led analytics and engineering across network operations, operational reporting, dashboards, forecasting and capacity planning.</p>
-      </div>
-
-      <div class="timeline-item">
-        <span class="timeline-date">Nov 2007 – Jul 2014</span>
-        <h3>Migration Consultant | Huawei | Various Locations</h3>
-        <p>Delivered reporting, performance monitoring, dashboarding and data analysis across telecom network transformation programmes.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section class="section" id="skills">
-    <div class="section-heading center">
-      <p class="section-kicker">Skills</p>
-      <h2>Technology stack and delivery capabilities.</h2>
-    </div>
-
-    <div class="skills-grid">
-      <div class="skill-box">
-        <h3>Data Platforms</h3>
-        <div class="badges">
-          <span>Oracle</span><span>MySQL</span><span>PostgreSQL</span><span>Cassandra</span><span>Neo4J</span><span>Redis</span><span>Elasticsearch</span><span>Teradata</span><span>Cloudera</span><span>Apache Spark</span><span>Kafka</span><span>Airflow</span><span>Microsoft Fabric</span><span>AWS Glue</span><span>AWS Athena</span><span>Alteryx</span>
+    <section class="section" id="about">
+      <div class="container two-column">
+        <div>
+          <span class="section-kicker">About</span>
+          <h2>A senior architect who connects business problems with practical AI, data and cloud solutions.</h2>
+        </div>
+        <div class="rich-text">
+          <p>
+            Dina Abdel Rahman is a Lead Data, AI and Cloud Architect based in Ireland with 19+ years of experience delivering
+            complex data, analytics, AI and cloud solutions across regulated and enterprise environments.
+          </p>
+          <p>
+            She has strong experience in enterprise architecture, applied AI solution design, GenAI-enabled platforms,
+            Claude-based solutions, data governance, cloud-native systems and large-scale transformation. She works with
+            senior stakeholders, delivery teams and vendors to shape secure, scalable and production-ready solutions.
+          </p>
         </div>
       </div>
+    </section>
 
-      <div class="skill-box">
-        <h3>AI & Programming</h3>
-        <div class="badges">
-          <span>Python</span><span>FastAPI</span><span>Flask</span><span>scikit-learn</span><span>PyTorch</span><span>SageMaker</span><span>Azure ML Studio</span><span>AI Foundry</span><span>LangChain</span><span>LangGraph</span><span>CrewAI</span>
+    <section class="section tinted" id="expertise">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">Expertise</span>
+          <h2>Core architecture strengths</h2>
+          <p>Built around applied AI, enterprise data platforms, secure cloud design and delivery governance.</p>
+        </div>
+        <div class="cards six">
+          <article class="card">
+            <span class="icon">✦</span>
+            <h3>Applied AI, GenAI & LLM Architecture</h3>
+            <p>Claude, OpenAI, AI agents, Microsoft Agent Framework, LangChain, Azure AI services, prompt workflows, retrieval patterns, monitoring and governance.</p>
+          </article>
+          <article class="card">
+            <span class="icon">▣</span>
+            <h3>Enterprise Data Architecture</h3>
+            <p>Data models, analytical layers, warehouses, batch and streaming platforms, APIs, files, logs, databases and event-driven integration.</p>
+          </article>
+          <article class="card">
+            <span class="icon">☁</span>
+            <h3>Cloud-Native Solution Design</h3>
+            <p>Azure and AWS architecture covering secure infrastructure, storage, networking, model access, monitoring, observability and environment separation.</p>
+          </article>
+          <article class="card">
+            <span class="icon">◇</span>
+            <h3>Governance, Security & Quality</h3>
+            <p>Data access, auditability, output validation, regulatory readiness, data quality contracts, operational controls and safe AI adoption.</p>
+          </article>
+          <article class="card">
+            <span class="icon">⇄</span>
+            <h3>Migration & Transformation</h3>
+            <p>Modernising legacy and fragmented data landscapes into scalable cloud-native and hybrid architectures with phased delivery roadmaps.</p>
+          </article>
+          <article class="card">
+            <span class="icon">✓</span>
+            <h3>Architecture Leadership</h3>
+            <p>Architecture reviews, option assessments, decision forums, stakeholder workshops, Agile delivery support and executive-level reporting.</p>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="skill-box">
-        <h3>Analytics & Visualisation</h3>
-        <div class="badges">
-          <span>Power BI</span><span>MicroStrategy</span><span>Tableau</span>
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">Featured work</span>
+          <h2>Projects that show enterprise impact</h2>
+          <p>Selected work from banking, energy, public sector and telecom environments.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project featured">
+            <div class="tag">Banking | Azure | Claude | GenAI</div>
+            <h3>Claude-Based Enterprise AI Platform</h3>
+            <p>Designed a regulated banking AI platform deployed on Azure, covering Claude integration, AI agents, orchestration, knowledge ingestion, data integration and operational tooling.</p>
+            <ul>
+              <li>Designed agent runtime, action execution and multi-agent coordination.</li>
+              <li>Defined secure access to enterprise knowledge sources.</li>
+              <li>Embedded security, cost management, auditability and observability controls.</li>
+            </ul>
+          </article>
+          <article class="project">
+            <div class="tag">Energy | Claude MVPs | Applied AI</div>
+            <h3>Claude MVP Development</h3>
+            <p>Developed five Claude-based MVPs for energy sector use cases, supporting applied AI adoption across business and operational processes.</p>
+            <ul>
+              <li>Designed prompt workflows, enterprise data access and user interaction flows.</li>
+              <li>Validated business value, feasibility and delivery approach with stakeholders.</li>
+              <li>Considered privacy, reliability, auditability and operational controls.</li>
+            </ul>
+          </article>
+          <article class="project">
+            <div class="tag">Energy | ESG | CSRD</div>
+            <h3>Sustainability Data & Technology Assessment</h3>
+            <p>Led an assessment of ESG and CSRD reporting technology for a regulated energy organisation.</p>
+            <ul>
+              <li>Reviewed data quality, security, auditability and integration.</li>
+              <li>Mapped ESG data flows across systems, analytics, geospatial tools and spreadsheets.</li>
+              <li>Led buy-versus-build analysis and future-state principles.</li>
+            </ul>
+          </article>
+          <article class="project">
+            <div class="tag">Public Sector | Azure Document Intelligence</div>
+            <h3>Automated Invoice Processing Architecture</h3>
+            <p>Designed an Azure-based architecture for scanned invoice intake, classification, OCR extraction, validation and secure storage.</p>
+            <ul>
+              <li>Designed end-to-end intake and validation process.</li>
+              <li>Protected invoice data, scanned documents and generated artifacts.</li>
+              <li>Defined secure storage for extraction and validation results.</li>
+            </ul>
+          </article>
+          <article class="project">
+            <div class="tag">Public Sector | Core Data Platform</div>
+            <h3>Core Data Platform Assessment</h3>
+            <p>Performed an end-to-end assessment of core data systems, infrastructure, database models, storage, security logging, monitoring, backup, HA and DR.</p>
+            <ul>
+              <li>Reviewed data quality issues across critical data elements.</li>
+              <li>Defined archive requirements and target archive approach.</li>
+              <li>Recommended improvements for service continuity and resilience.</li>
+            </ul>
+          </article>
+          <article class="project">
+            <div class="tag">Telecom | Data Lake | Kafka | Cloudera</div>
+            <h3>Enterprise Data Lake Architecture</h3>
+            <p>Led DU’s enterprise data lake architecture and implementation to support large-scale ingestion, governance, analytics and AI use cases.</p>
+            <ul>
+              <li>Integrated 60+ sources across RAN, core, transmission, IP and applications.</li>
+              <li>Designed Kafka topics, schemas, retention, compression and security.</li>
+              <li>Designed Cloudera HDFS, Spark, Hive, Impala and Ranger policies.</li>
+            </ul>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="skill-box">
-        <h3>DevOps & Cloud Native</h3>
-        <div class="badges">
-          <span>Git</span><span>Jenkins</span><span>GitLab</span><span>Azure DevOps</span><span>Terraform</span><span>Docker</span><span>Kubernetes</span><span>OpenShift</span>
+    <section class="section tinted" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">Experience</span>
+          <h2>Career timeline</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="date">May 2025 – Present</span>
+            <h3>Data & AI Solution Architect, Associate Director | KPMG | Ireland</h3>
+            <p>Delivering Data, AI and cloud solution architecture across public sector, utilities, energy and banking. Leading solution design, customer-facing AI workshops, target-state architecture, delivery planning and architecture assurance.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="date">Nov 2022 – May 2025</span>
+            <h3>Senior Solution Architect | Ericsson | Ireland</h3>
+            <p>Led architecture design for a next-generation 5G network automation platform. Designed cloud-native components, microservices, data flows, message schemas, API structures and platform dependencies.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="date">May 2019 – Nov 2022</span>
+            <h3>AI, Data Solution Architect | DU | UAE</h3>
+            <p>Led enterprise data lake architecture, data source integration, Kafka and Cloudera design, AI use case assessment, vendor engagement and POC planning.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="date">Aug 2014 – May 2019</span>
+            <h3>Data Analytics and Engineering Lead | DU | UAE</h3>
+            <p>Led network analytics, performance reporting, SQL and ETL workflows, real-time dashboards, forecasting and capacity planning. Coordinated 15+ stakeholders and 40+ team members during a multi-year network upgrade programme.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="date">Nov 2007 – Jul 2014</span>
+            <h3>Migration Consultant | Huawei | Various Locations</h3>
+            <p>Delivered reporting, dashboards, performance monitoring and data analysis solutions across telecom network transformation programmes.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Certifications and training -->
-  <section class="section soft-section" id="certifications">
-    <div class="section-heading center">
-      <p class="section-kicker">Certifications & Training</p>
-      <h2>Continuous learning across Azure, AWS, AI, ML, DevOps and cloud-native platforms.</h2>
-    </div>
-
-    <div class="two-column">
-      <div class="panel">
-        <h3>Certifications</h3>
-        <ul class="clean-list credential-list">
-          <li><a href="https://learn.microsoft.com/en-gb/users/dinaabdelrahman-6051/credentials/2e6b83c832cbd402?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener">Microsoft Certified: Azure AI Engineer Associate</a></li>
-          <li><a href="https://www.udacity.com/certificate/QP49H3CC" target="_blank" rel="noopener">Data Engineering Nanodegree</a></li>
-          <li><a href="https://www.credly.com/badges/cf81e66e-0b5a-459b-9a43-2ad87be883a4/linked_in_profile" target="_blank" rel="noopener">Applied Data Science Camp - Graduate 2023</a></li>
-          <li><a href="https://www.credly.com/badges/aed33bbf-f69d-4b84-83ac-20fa1b3f4a49?source=linked_in_profile" target="_blank" rel="noopener">Microsoft Certified: Azure Data Fundamentals</a></li>
-          <li><a href="https://www.credly.com/badges/06112216-f1b9-4933-8673-847c0864eb64?source=linked_in_profile" target="_blank" rel="noopener">Microsoft Certified: Azure AI Fundamentals</a></li>
-          <li><a href="https://www.credly.com/badges/a2751bd1-4f92-4ce0-b389-b7ff7cc35877?source=linked_in_profile" target="_blank" rel="noopener">Microsoft Certified: Azure Fundamentals</a></li>
-          <li><a href="https://www.credly.com/badges/9d9560cb-4deb-403a-bb41-56974ff110cb?source=linked_in_profile" target="_blank" rel="noopener">AWS Certified Machine Learning – Specialty</a></li>
-          <li><a href="https://www.credly.com/badges/ab1732e3-61a7-438e-b31e-29681bf59282?source=linked_in_profile" target="_blank" rel="noopener">AWS Certified Solution Architect Associate</a></li>
-          <li><a href="https://www.credly.com/badges/bcb52b4d-35a6-45b2-9673-def3940d2458?source=linked_in_profile" target="_blank" rel="noopener">AWS Partner: Accreditation (Business)</a></li>
-          <li><a href="https://www.credly.com/badges/06bf684f-4940-49fb-9107-c0db8f9d0300?source=linked_in_profile" target="_blank" rel="noopener">AWS Partner: Accreditation (Technical)</a></li>
-          <li><a href="https://www.credly.com/badges/8e9b2e5c-6d5b-4016-9ee2-bbe064cbe60e?source=linked_in_profile" target="_blank" rel="noopener">AWS Partner: Cloud Economics Accreditation</a></li>
-          <li><a href="https://www.udacity.com/certificate/FACEDFQ3" target="_blank" rel="noopener">Deep Learning Nanodegree (Udacity)</a></li>
-          <li><a href="https://www.udacity.com/certificate/HV2E6HEJ" target="_blank" rel="noopener">Data Analyst Nanodegree (Udacity)</a></li>
-          <li><a href="https://www.udacity.com/certificate/5D4SPDDJ" target="_blank" rel="noopener">Business Analyst Nanodegree (Udacity)</a></li>
-        </ul>
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">Tools and platforms</span>
+          <h2>Technology depth</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-box">
+            <h3>AI, GenAI & Agentic Platforms</h3>
+            <div class="badges"><span>Claude</span><span>OpenAI</span><span>Azure AI Foundry</span><span>Azure ML Studio</span><span>Microsoft Agent Framework</span><span>LangChain</span><span>LangGraph</span><span>CrewAI</span><span>SageMaker</span></div>
+          </div>
+          <div class="skill-box">
+            <h3>Programming & API Development</h3>
+            <div class="badges"><span>Python</span><span>FastAPI</span><span>Flask</span><span>scikit-learn</span><span>PyTorch</span></div>
+          </div>
+          <div class="skill-box">
+            <h3>Data Platforms</h3>
+            <div class="badges"><span>Oracle</span><span>MySQL</span><span>PostgreSQL</span><span>Cassandra</span><span>Neo4j</span><span>Redis</span><span>Elasticsearch</span><span>Teradata</span><span>Cloudera</span><span>Apache Spark</span><span>Kafka</span><span>Airflow</span><span>Microsoft Fabric</span><span>AWS Glue</span><span>AWS Athena</span><span>Alteryx</span></div>
+          </div>
+          <div class="skill-box">
+            <h3>Analytics, DevOps & Cloud Native</h3>
+            <div class="badges"><span>Power BI</span><span>MicroStrategy</span><span>Tableau</span><span>Git</span><span>Jenkins</span><span>GitLab</span><span>Azure DevOps</span><span>Terraform</span><span>Docker</span><span>Kubernetes</span><span>OpenShift</span></div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="panel">
-        <h3>Professional Training</h3>
-        <ul class="clean-list">
-          <li>Kubernetes and Helm Administration</li>
-          <li>Developing Cloud Native Applications</li>
-          <li>Microsoft Azure DevOps Engineer</li>
-          <li>Microsoft Azure AI Engineer</li>
-          <li>Microsoft Azure Machine Learning Engineer</li>
-          <li>Microsoft Azure Solution Architect Professional</li>
-          <li>Microsoft Azure Data Engineering</li>
-          <li>Developing on AWS Professional Training</li>
-          <li>DevOps Engineering on AWS Professional Training</li>
-          <li>AWS Machine Learning Engineer Professional Training</li>
-          <li>Intel Edge AI for IoT Developers</li>
-        </ul>
+    <section class="section tinted" id="credentials">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">Credentials</span>
+          <h2>Certifications and nanodegrees</h2>
+          <p>Clickable credentials for recruiter and hiring manager verification.</p>
+        </div>
+        <div class="credential-grid">
+          <a class="credential" href="https://learn.microsoft.com/en-gb/users/dinaabdelrahman-6051/credentials/2e6b83c832cbd402?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener"><span>Microsoft</span><strong>Azure AI Engineer Associate</strong></a>
+          <a class="credential" href="https://www.credly.com/badges/aed33bbf-f69d-4b84-83ac-20fa1b3f4a49?source=linked_in_profile" target="_blank" rel="noopener"><span>Microsoft</span><strong>Azure Data Fundamentals</strong></a>
+          <a class="credential" href="https://www.credly.com/badges/06112216-f1b9-4933-8673-847c0864eb64?source=linked_in_profile" target="_blank" rel="noopener"><span>Microsoft</span><strong>Azure AI Fundamentals</strong></a>
+          <a class="credential" href="https://www.credly.com/badges/a2751bd1-4f92-4ce0-b389-b7ff7cc35877?source=linked_in_profile" target="_blank" rel="noopener"><span>Microsoft</span><strong>Azure Fundamentals</strong></a>
+          <a class="credential" href="https://www.credly.com/badges/9d9560cb-4deb-403a-bb41-56974ff110cb?source=linked_in_profile" target="_blank" rel="noopener"><span>AWS</span><strong>Machine Learning – Specialty</strong></a>
+          <a class="credential" href="https://www.credly.com/badges/ab1732e3-61a7-438e-b31e-29681bf59282?source=linked_in_profile" target="_blank" rel="noopener"><span>AWS</span><strong>Solutions Architect Associate</strong></a>
+          <a class="credential" href="https://www.credly.com/badges/bcb52b4d-35a6-45b2-9673-def3940d2458?source=linked_in_profile" target="_blank" rel="noopener"><span>AWS Partner</span><strong>Accreditation Business</strong></a>
+          <a class="credential" href="https://www.credly.com/badges/06bf684f-4940-49fb-9107-c0db8f9d0300?source=linked_in_profile" target="_blank" rel="noopener"><span>AWS Partner</span><strong>Accreditation Technical</strong></a>
+          <a class="credential" href="https://www.credly.com/badges/8e9b2e5c-6d5b-4016-9ee2-bbe064cbe60e?source=linked_in_profile" target="_blank" rel="noopener"><span>AWS Partner</span><strong>Cloud Economics Accreditation</strong></a>
+          <a class="credential" href="https://www.udacity.com/certificate/QP49H3CC" target="_blank" rel="noopener"><span>Udacity</span><strong>Data Engineering Nanodegree</strong></a>
+          <a class="credential" href="https://www.udacity.com/certificate/FACEDFQ3" target="_blank" rel="noopener"><span>Udacity</span><strong>Deep Learning Nanodegree</strong></a>
+          <a class="credential" href="https://www.udacity.com/certificate/HV2E6HEJ" target="_blank" rel="noopener"><span>Udacity</span><strong>Data Analyst Nanodegree</strong></a>
+          <a class="credential" href="https://www.udacity.com/certificate/5D4SPDDJ" target="_blank" rel="noopener"><span>Udacity</span><strong>Business Analyst Nanodegree</strong></a>
+          <a class="credential" href="https://www.credly.com/badges/cf81e66e-0b5a-459b-9a43-2ad87be883a4/linked_in_profile" target="_blank" rel="noopener"><span>Applied Data Science Camp</span><strong>Graduate 2023</strong></a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section class="section contact-section" id="contact">
-    <div class="contact-card">
-      <p class="section-kicker">Contact</p>
-      <h2>Let’s connect.</h2>
-      <p>
-        For architecture leadership, Data and AI transformation, cloud platform design or enterprise AI discussions,
-        you can contact Dina by email or LinkedIn.
-      </p>
-
-      <div class="contact-actions">
-        <a href="mailto:Dina.mowafie@gmail.com" class="primary-button">Email Dina</a>
-        <a href="Dina-Abdel-Rahman-Resume.pdf" class="secondary-button" target="_blank">Download Resume</a>
-        <a href="https://www.linkedin.com/in/dina-abdel-rahman-5565a622/" class="secondary-button" target="_blank" rel="noopener">LinkedIn Profile</a>
+    <section class="section" id="training">
+      <div class="container two-column">
+        <div>
+          <span class="section-kicker">Training</span>
+          <h2>Professional training</h2>
+        </div>
+        <div class="training-list">
+          <span>Kubernetes and Helm Administration</span>
+          <span>Developing Cloud Native Applications</span>
+          <span>Microsoft Azure DevOps Engineer</span>
+          <span>Microsoft Azure AI Engineer</span>
+          <span>Microsoft Azure Machine Learning Engineer</span>
+          <span>Microsoft Azure Solution Architect Professional</span>
+          <span>Microsoft Azure Data Engineering</span>
+          <span>Developing on AWS Professional Training</span>
+          <span>DevOps Engineering on AWS Professional Training</span>
+          <span>AWS Machine Learning Engineer Professional Training</span>
+          <span>Intel Edge AI for IoT Developers</span>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <p>© <span id="year"></span> Dina Abdel Rahman. All rights reserved.</p>
+    <section class="cta" id="contact">
+      <div class="container cta-card">
+        <div>
+          <span class="section-kicker">Contact</span>
+          <h2>Available for senior Data, AI and Cloud Architecture opportunities.</h2>
+          <p>Athlone, Westmeath, Ireland. Open to discussions across enterprise AI, GenAI, cloud transformation, data platforms and architecture leadership.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn primary" href="mailto:Dina.mowafie@gmail.com">Email Dina</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/dina-abdel-rahman-5565a622/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> Dina Abdel Rahman. All rights reserved.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
