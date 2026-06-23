@@ -350,6 +350,22 @@ a {
   color: var(--muted);
 }
 
+.credential-list a {
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(109, 40, 217, 0.28);
+}
+
+.credential-list a:hover {
+  color: var(--purple);
+  border-bottom-color: var(--purple);
+}
+
+.credential-list li {
+  margin-bottom: 10px;
+}
+
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
